@@ -7,12 +7,12 @@ media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections: 
-  - name: "coding"
-    label: "Coding"
-    folder: "content/posts"
+  - name: "post"
+    label: "Posts"
+    folder: "posts"
     create: true 
     slug: "{{year}}-{{month}}-{{slug}}"
-    field:
+    fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
