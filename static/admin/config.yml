@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+  branch: main
+
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections: 
+  - name: "coding"
+    label: "Coding"
+    folder: "content/coding"
+    create: true 
+    slug: "{{year}}-{{month}}-{{slug}}"
+    field:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Categories", name: "categories", widget: "string", required: true}
+      - {label: "Tags", name: "tags", widget: "string", required: false}
+      - {label: Author, name: author, widget: hidden, default: Antoine Verhulst}
+      - {label: Author Image, name: authorImage, widget: hidden, default: Antoine Verhulst}
+      - {label: "Header Image", name: image, widget: image, required: false}
+      - {label: Commenting, name: comments, widget: boolean, default: true}
+      - {label: Sharing, name: shares, widget: boolean, default: true}
+      - {label: Type, name: type, widget: hidden, default: "post"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+
+
+
+
+
+
+
+
+
