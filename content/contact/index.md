@@ -1,12 +1,9 @@
 +++
 date = "2022"
-title = "Contact us"
+title = "Get in touch"
 +++
 
-
-
-
-<form name="contact" netlify>
+<form method="post" name="Contact" netlify>
     <label for="fname">First Name</label>
     <br>
     <input type="text" id="fname" name = "firstname" placeholder = "Your first name">
