@@ -7,5 +7,4 @@ description = "This is meta description"
 categories = ["urbanism"]
 tags=["projects"]
 type = "post"
-
 +++
