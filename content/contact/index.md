@@ -1,6 +1,6 @@
 +++
 date = "2022"
-title = "Get in touch"
+title = "Test 2"
 +++
 
 <form method="post" name="Contact" netlify>
